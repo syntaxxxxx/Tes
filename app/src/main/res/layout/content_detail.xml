@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_berita_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tanggaldetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Senin, 12 Maret, 2018" />
+
+
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/wv_kontendetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="WebViewLayout">
+
+        </WebView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
